@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAISERS & CHOCOLATE</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/cf346d5162.js" crossorigin="anonymous"></script>
+    <link rel="vidytb" href="https://www.youtube.com/watch?v=hymVP5KABE8">
+</head>
+<body>
+    <!--banner+ thanh dieu huong-->
+    <div class="header-banner" >
+        <section id="HOME" class="Banner" style="background-color: #272521;text-align: center;color: white;font-size: 12px;">
+            <marquee>Now Are Sale Up To 20%</marquee>
+        </section>
+        <header>
+            <div class="Name" style="font-size: 15px;font-family:lulo-clean-w01-one-bold;word-spacing: 4px;color: whitesmoke">
+                <li><a href="home.html">BAISERS & CHOCOLATE</a></li>
+            </div>
+            <div class="menu" id="menu" style="font-size: 15px;">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="shop.html" >CHOCOLATE BOX</a></li>
+                <li><a href="other.html">OTHER</a></li>
+                <li><a href="about.html#about">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <script>
+                    function toggleMenu() {
+                        var menu = document.getElementById("menu");
+                        if (window.innerWidth < 1023) { 
+                            if (menu.style.display === "block") {
+                                menu.style.display = "none";
+                            } else {
+                                menu.style.display = "block";
+                            }
+                        }
+                    }
+                </script>
+            </div>
+            <div class="others" style="justify-content: center;">
+                <li><a class="fa-solid fa-user" href=""></a></li>
+                <li><a class="fa fa-shopping-bag" href=""></a></li>
+            </div>
+            <div class="menu-icon" id="menu-icon" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    <!--NOIDUNG-->
+    <div class="container-shop">
+        <h1 style="color: #4a4a4a;text-align: center;">Choose Your Chocolate</h1>
+        <div class="product-grid">
+            <!-- Add your products here -->
+            <div class="product-item visible" >
+                <div class="product-images" style="position: relative;">
+                    <img src="images/giftboxo12tf.png" alt="Gift Box of 12 Truffles" class="product-img closed">
+                    <img src="images/gbo12tf-inside1.png" alt="Inside Gift Box of 12 Truffles" class="product-img open">
+                </div>
+                <div class="thongtin" style="margin-top: 295px;">
+                    <div class="product-name">Gift Box of 12 Truffles</div>
+                    <span class="product-price">47$</span>
+                    <span class="product-sale-price">40$</span> <br>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>              
+            </div>
+            <div class="product-item visible">
+                <div class="product-images" style="position: relative;">
+                    <img src="images/whiteccltfq.png" alt="White Chocolate Truffles" class="product-img closed">
+                    <img src="images/whiteccltf-inside.png" alt="Inside White Chocolate Truffles" class="product-img open">
+                </div>
+                <div class="thongtin" style="margin-top: 295px;">
+                    <div class="product-name">White Chocolate Truffles</div>
+                    <span class="product-price">37$</span>
+                    <span class="product-sale-price">32$</span> <br>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-item visible">
+                <div class="product-images" style="position: relative;">
+                    <img src="images/whiteccl&nt.png" alt="White Chocolate & Nuts Truffles" class="product-img closed">
+                    <img src="images/whiteccl&nt-inside.png" alt="Inside White Chocolate & Nuts Truffles" class="product-img open">
+                </div>
+                <div class="thongtin" style="margin-top: 295px;">
+                    <div class="product-name">White Chocolate & Nuts Truffles</div>
+                    <span class="product-sale-price">39$</span> <br>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <!-- More products initially hidden -->
+            <div class="product-item visible">
+                <div class="product-images" style="position: relative;">
+                    <img src="images/milkccltf.png" alt="Milk Chocolate Truffles" class="product-img closed">
+                    <img src="images/milkccltf-inside.png" alt="Inside Milk Chocolate Truffles" class="product-img open">
+                </div>
+                <div class="thongtin" style="margin-top: 295px;">
+                    <div class="product-name">Milk Chocolate Truffles</div>
+                    <span class="product-price">37$</span>
+                    <span class="product-sale-price">32$</span> <br>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-item visible">
+                <div class="product-images" style="position: relative;">
+                    <img src="images/milkccl&ct.png" alt="Milk Chocolate & Coconut Truffles" class="product-img closed">
+                    <img src="images/milkccl&ct-inside.png" alt="Inside Milk Chocolate & Coconut Truffles" class="product-img open">
+                </div>
+                <div class="thongtin" style="margin-top: 295px;">
+                    <div class="product-name">Milk Chocolate & Coconut Truffles</div>
+                    <span class="product-price">39$</span>
+                    <span class="product-sale-price">35$</span> <br>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-item visible">
+                <div class="product-images" style="position: relative;">
+                    <img src="images/raspberrytf.png" alt="Raspberry Truffles" class="product-img closed">
+                    <img src="images/raspberrytf-inside.png" alt="Inside Raspberry Truffles" class="product-img open">
+                </div>
+                <div class="thongtin" style="margin-top: 295px;">
+                    <div class="product-name">Raspberry Truffles</div>
+                    <span class="product-sale-price">42$</span> <br>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-item">
+                <div class="product-images" style="position: relative;">
+                    <img src="images/lavenderclctf.png" alt="Lavender Chocolate Truffles" class="product-img closed">
+                    <img src="images/lavenderclctf-inside.png" alt="Inside Lavender Chocolate Truffles" class="product-img open">
+                </div>
+                <div class="thongtin" style="margin-top: 295px;">
+                    <div class="product-name">Lavender Chocolate Truffles</div>
+                    <span class="product-sale-price">40$</span> <br>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-item">
+                <div class="product-images" style="position: relative;">
+                    <img src="images/darkccltf.png" alt="Dark Chocolate Truffles" class="product-img closed">
+                    <img src="images/darkccltf-inside.png" alt="Inside Dark Chocolate Truffles" class="product-img open">
+                </div>
+                <div class="thongtin" style="margin-top: 295px;">
+                    <div class="product-name">Dark Chocolate Truffles</div>
+                    <span class="product-price">37$</span>
+                    <span class="product-sale-price">32$</span> <br>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-item">
+                <div class="product-images" style="position: relative;">
+                    <img src="images/peanutbttf.png" alt="Peanut Butter Truffles" class="product-img closed">
+                    <img src="images/peanutbttf-inside.png" alt="Inside Peanut Butter Truffles" class="product-img open">
+                </div>
+                <div class="thongtin" style="margin-top: 295px;">
+                    <div class="product-name">Peanut Butter Truffles</div>
+                    <span class="product-sale-price">45$</span> <br>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                
+            </div>
+            <div class="product-item">
+                <div class="product-images" style="position: relative;">
+                    <img src="images/pecanptf.png" alt="Peacan Pie Truffles" class="product-img closed">
+                    <img src="images/pecanptf-inside.png" alt="Inside Peacan Pie Truffles" class="product-img open">
+                </div>
+                <div class="thongtin" style="margin-top: 295px;">
+                    <div class="product-name">Peacan Pie Truffles</div>
+                    <span class="product-sale-price">45$</span> <br>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-item">
+                <div class="product-images" style="position: relative;">
+                    <img src="images/appledtf.png" alt="Apple Sauce Truffles" class="product-img closed">
+                    <img src="images/appledtf-inside.png" alt="Inside Apple Sauce Truffles" class="product-img open">
+                </div>
+                <div class="thongtin" style="margin-top: 295px;">
+                    <div class="product-name">Apple Sauce Truffles</div>
+                    <span class="product-price">45$</span>
+                    <span class="product-sale-price">42$</span> <br>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                
+            </div>
+            <div class="product-item">
+                <div class="product-images" style="position: relative;">
+                    <img src="images/mochabntf.png" alt="Mocha Brownie Truffles" class="product-img closed">
+                    <img src="images/mochabntf-inside.png" alt="Inside Mocha Brownie Truffles" class="product-img open">
+                </div>
+                <div class="thongtin" style="margin-top: 295px;">
+                    <div class="product-name">Mocha Brownie Truffles</div>
+                    <span class="product-sale-price">43$</span> <br>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>       
+            </div>
+        </div>
+        <button class="show-more" onclick="showMoreProducts()">Show More</button>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const products = document.querySelectorAll('.product-item');
+            for (let i = 0; i < 9 && i < products.length; i++) {
+                products[i].classList.add('visible');
+            }
+        });
+        function showMoreProducts() {
+            const products = document.querySelectorAll('.product-item');
+            let count = 0;
+            for (let i = 0; i < products.length; i++) {
+                if (!products[i].classList.contains('visible') && count < 3) {
+                    products[i].classList.add('visible');
+                    count++;
+                }
+            }
+            if (Array.from(products).every(product => product.classList.contains('visible'))) {
+                document.querySelector('.show-more').style.display = 'none';
+            }
+        }
+    </script>
+    <div class="footer">
+        <!--phan see more-->
+        <section id="contact" class="seemore" style="text-align: center; font-size: 30px;">
+            <h1>SEE MORE</h1>
+            <div class="vidytb">
+                <iframe width="50%" height="400vw" 
+                    src="https://www.youtube.com/embed/hymVP5KABE8" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+        <!--phan contact-->
+        <section id="contact">
+            <div class="CONTACT" style="text-align: center;background-color: #4E4A42;color: #d9d5ca;word-spacing: 0.7vw;font-size: 1.3vw;">
+                <p1 class="contact1" > CONTACT </p1> <br>
+                <p2 class="contact2">TEL: 123-456-7890 / BAISERSANDCHOCOLATE.COM <br>
+                216 Nguyen Trai street, Van Quan, Thanh Xuan, Ha Noi, Viet Nam <br>
+                OPENING HOURS 8:00AM-9:00PM</p2> <br>
+                <div class="more">
+                    <a href="FAQ" style="text-decoration: underline;">FAQ</a>
+                    <a href="shipping&refund.html" style="text-decoration: underline; margin-left: 40px;margin-right: 40px;">Shipping & Refunds</a>
+                    <a href="Policy" style="text-decoration: underline;">Store Policy</a>
+                </div>
+            </div>     
+        </section>
+    </div>
+    
+</body>
+</html>

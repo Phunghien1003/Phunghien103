@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAISERS & CHOCOLATE</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/cf346d5162.js" crossorigin="anonymous"></script>
+    <link rel="vidytb" href="https://www.youtube.com/watch?v=hymVP5KABE8">
+    <style>
+        /* Thiết lập cho video */
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 100%; 
+            overflow: hidden; 
+        }
+
+        video {
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover;
+            object-position: 50% 50%; 
+        }
+        .text-overlay {
+            position: absolute; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            color: white; 
+            text-align: center; 
+            z-index: 1;
+        }
+
+        .seemore1 {
+            display: inline-block; 
+            margin-top: 10px; 
+            padding: 2px 10px; 
+            background-color:rgb(191, 167, 96, 0.6); 
+            color: floralwhite; 
+            text-decoration: none; 
+            border-radius: 120px;
+        }
+        .seemore1:hover{
+            background-color: rgb(191, 167, 96, 1);
+            color: antiquewhite;
+        }
+        .visitus1 {
+            position: relative; 
+            width: 20vw; 
+            height: 30vw; 
+            margin: 5% 15%;
+            border-radius: 200px 200px 0 0; 
+            overflow: hidden;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2); 
+        }
+
+        video {
+            width: 100%;
+            height: 30vw; 
+            display: block; 
+        }
+        .visitus2 p1::after{
+            content:"__";
+            display: block;
+            width: 50px; 
+            height: 1px; 
+            background-color: white;
+            margin-top:-5%; 
+            margin-left: 10%;
+        }
+        #map {
+            background-color: #BFA760; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 50vw ;
+        }
+        iframe {
+            width: 50vw; 
+            height: 30vw; 
+        }
+    </style>
+</head>
+<body>
+    <!--banner+ thanh dieu huong-->
+    <div class="header-banner" >
+        <section id="HOME" class="Banner" style="background-color: #272521;text-align: center;color: white;font-size: 12px;">
+            <marquee>Now Are Sale Up To 20%</marquee>
+        </section>
+        <header>
+            <div class="Name" style="font-size: 15px;font-family:lulo-clean-w01-one-bold;word-spacing: 4px;color: whitesmoke">
+                <li><a href="home.html">BAISERS & CHOCOLATE</a></li>
+            </div>
+            <div class="menu" id="menu" style="font-size: 15px;">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="shop.html" >CHOCOLATE BOX</a></li>
+                <li><a href="other.html">OTHER</a></li>
+                <li><a href="about.html#about">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <script>
+                    function toggleMenu() {
+                        var menu = document.getElementById("menu");
+                        if (window.innerWidth < 1023) { 
+                            if (menu.style.display === "block") {
+                                menu.style.display = "none";
+                            } else {
+                                menu.style.display = "block";
+                            }
+                        }
+                    }
+                </script>
+            </div>
+            <div class="others" style="justify-content: center;">
+                <li><a class="fa-solid fa-user" href=""></a></li>
+                <li><a class="fa fa-shopping-bag" href=""></a></li>
+            </div>
+            <div class="menu-icon" id="menu-icon" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    <!--noi dung-->
+    <div class="video-container">
+        <video src="images/video1.mp4" autoplay loop muted></video>
+        <div class="text-overlay" >
+            <p1 style="font-size: 3vw;">BAISERS & CHOCOLATE</p1> <br>
+            <p2 style="font-size: 2vw; color: #BFA760;">Online Store Available</p2> <br>
+            <a href="home.html" class="seemore1" style="font-size: 1.3vw;">See more</a>
+        </div>
+    </div>
+    <div class="visitus" style="display: flex; flex-wrap: wrap;">
+        <div class="visitus1">
+            <video src="images/visitus.mp4" autoplay loop muted></video>
+        </div>
+        <div  class="visitus2" style="color: #272521; margin-top: 10%;margin-left: -10%; font-size: 1.3vw;">
+            <p1 style="font: 3vw  bolder ">VISIT US</p1> <br>
+            <p>OPENING HOURS: 8:00AM-9:00PM </p>
+            <p>HOTLINE: 123-456-7890</p>   
+            <p>WEBSITE: baiserandchocolate.com</p>   
+            <p>EMAIL: baiserandchocolate@ms.com</p>   
+            <p>ADDRESS: 16 Nguyen Trai street, Van Quan, Thanh Xuan, Ha Noi, Viet Nam, XQQX+54</p>        
+        </div>
+    </div>
+    <div id="map" style="background-color: #BFA760; margin-bottom: -5%;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.121889744929!2d105.79680717503031!3d20.987750580651365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135acc74a0237c3%3A0xf9cc906e22f0dc57!2zxJAuIE5ndXnhu4VuIFRyw6NpLzE2IE5nw7UgNDk1LCBU4buVIDcsIFRoYW5oIFh1w6JuLCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1729845832891!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="footer">
+        <!--phan see more-->
+        <section id="contact" class="seemore" style="text-align: center; font-size: 30px;">
+            <h1>SEE MORE</h1>
+            <div class="vidytb">
+                <iframe width="50%" height="400vw" 
+                    src="https://www.youtube.com/embed/hymVP5KABE8" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+        <!--phan contact-->
+        <section id="contact">
+            <div class="CONTACT" style="text-align: center;background-color: #4E4A42;color: #d9d5ca;word-spacing: 0.7vw;font-size: 1.3vw;">
+                <p1 class="contact1" > CONTACT </p1> <br>
+                <p2 class="contact2">TEL: 123-456-7890 / BAISERSANDCHOCOLATE.COM <br>
+                216 Nguyen Trai street, Van Quan, Thanh Xuan, Ha Noi, Viet Nam <br>
+                OPENING HOURS 8:00AM-9:00PM</p2> <br>
+                <div class="more">
+                    <a href="FAQ" style="text-decoration: underline;">FAQ</a>
+                    <a href="shipping&refund.html" style="text-decoration: underline; margin-left: 40px;margin-right: 40px;">Shipping & Refunds</a>
+                    <a href="Policy" style="text-decoration: underline;">Store Policy</a>
+                </div>
+            </div>        
+        </section>
+    </div>
+    
+</body>
+</html>

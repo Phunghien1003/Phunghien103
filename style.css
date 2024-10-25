@@ -1,0 +1,703 @@
+html {
+    scroll-behavior: smooth;
+}
+body{
+    margin:0;
+    padding:0;
+    color: #756F63;
+    line-height: 1.5;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.header-banner{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+header{
+    background-color: #4E4A42;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1px 12px;
+    height: 50px;
+    max-width: 100%;
+    align-items: center;
+}
+.menu {
+    flex: 9;
+    display: flex;
+    justify-content: center;
+    transition: max-height 0.3s ease;
+    overflow: hidden;
+}
+.menu > li {
+    padding: 5px 10px;
+}
+
+.menu :hover{
+    color: #BFA760;
+}
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+.others {
+    display: flex;
+    justify-content: center;
+  
+}
+.others>li{
+    padding: 0 12px;
+    
+}
+.others>li:first-child{
+    position: relative;
+}
+.others> li:first-child input{
+    width: 90%;
+    border: none;
+    border-bottom: 4px solid #333; 
+}
+.others > li:first-child i {
+    position: absolute;
+    right: 30px;
+    top: 6px;
+}
+.anhbia {
+    background: url('images/anhbia3.png') no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed; 
+    width: 100%;
+    height: 100vh;
+}
+
+#map {
+    height: 100vh; 
+    width: 100%;
+}
+
+
+.shop-now {
+    display: inline-block;
+    font-size: 1.5vw;
+    color: rgb(255, 255, 255, 1);
+    background-color: transparent; 
+    padding: 1vw 2vw ;
+    text-align: center;
+    text-decoration: none; 
+    border: 1px solid white; 
+    border-radius: 4px; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.shop-now:hover {
+    background-color:  rgb(255, 255, 255, 0.2); 
+
+}
+
+.Intro{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    justify-content: space-between;
+    display: flex;
+    text-align: center;
+    margin: 10% 10%;
+    margin-top: 2%;
+    line-height: 3.3vw;
+    font-size: 1.2vw;
+}
+
+.lmtbox{  
+    align-items: center;
+    margin-top: 5%;
+}
+.giftbox-home{
+    width: 30vw;
+    margin-left: 20%;
+    height: auto;
+}
+.Casd p1::after{
+    content:"___________";
+    display: block;
+    width: 110px;
+    height: 1px;
+    background-color: white; 
+    margin: -2% auto 0;
+}
+.About-section{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display:flex;
+    justify-content: space-between;
+    text-align: center;
+    line-height: 4vw;
+    font-size: 1.2vw;  
+    padding: 20px;  
+}
+.staffChange{
+    flex: 1;
+    padding-top: 20px;
+    padding-right: 20px;
+    width: 70%;
+    height: auto;
+}
+.au{
+    flex: 1;
+    margin-right: 5%;
+    padding-left: 20px;
+    margin-top: 1%;
+}
+.au p1::after{
+    content:"______";
+    display: block;
+    width: 80px; 
+    height: 1px; 
+    background-color: white; 
+    margin: -5% auto 0; 
+}
+
+.quality{
+    display: flex;
+    justify-content:space-between;
+    text-align: center; 
+    font-size: 1.3vw;
+    line-height: 4vw;
+}
+.mat1,.mat2{
+    padding-top: 10px;
+    width:30%;
+    height: auto;
+    flex: 1;
+    padding-left: 20px;
+}
+.noidung{
+    margin-left: 10%;
+    margin-right: 3%;
+    flex: 1;
+}
+.noidung p1::after{
+    content:"__________";
+    display: block;
+    width: 10vw; 
+    height: 1px; 
+    background-color: white; 
+    margin: -2% auto 0;
+}
+.seemore{
+    background-color: #272521;
+    color: whitesmoke;
+    height: auto;
+    max-width: 100%;
+}
+.seemore h1::after{
+    content: '_';
+    display: block;
+    width: 40px; 
+    height: 2px;
+    background-color: white; 
+    margin: 5px auto 0; 
+}
+.CONTACT{
+    max-width: 100%;
+    height: auto;
+}
+.CONTACT .contact1::after{
+    content:"";
+    display: block;
+    width: 60px; 
+    height: 1px;
+    background-color: white;
+    margin: 3px auto 0; 
+}
+.container-shop {
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    padding-top: 180px;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.product-item {
+    background-color: #fff;
+    width: 275px;
+    margin: 50px;
+    padding: 2px;
+    text-align: center;
+    display: none; 
+}
+.product-item.visible {
+    display: block;
+}
+.product-item img {
+    max-width: 100%;
+}
+.product-name {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+.product-price {
+    color: #888;
+    text-decoration: line-through;
+}
+.product-sale-price {
+    color: #e63946;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.add-to-cart {
+    background-color: #4a4a4a;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.add-to-cart:hover {
+    background-color: #333;
+}
+.show-more {
+    background-color: #4a4a4a;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: block;
+}
+.show-more:hover {
+    background-color: #333;
+}
+.product-images img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    transition: opacity 0.5s ease-in-out; 
+    opacity: 0;
+}
+
+.product-images img.closed {
+    opacity: 1;
+}
+.product-item:hover .product-images img.closed {
+    opacity: 0;
+}
+
+.product-item:hover .product-images img.open {
+    opacity: 1;
+}
+.container-shop2 {
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    padding-top: 180px;
+}
+
+.product-grid2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.product-item2 {
+    background-color: #fff;
+    width: 275px;
+    margin: 50px;
+    padding: 2px;
+    text-align: center;
+    display: none;
+}
+.product-item.visible2 {
+    display: block; 
+}
+.product-item2 img {
+    max-width: 100%;
+}
+.product-name {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+.product-price {
+    color: #888;
+    text-decoration: line-through;
+}
+.product-sale-price {
+    color: #e63946;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.product-images2 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    transition: opacity 0.5s ease-in-out; 
+    opacity: 0; 
+}
+
+.product-images2 img.closed2 {
+    opacity: 1;
+}
+
+.product-item2:hover .product-images2 img.closed2 {
+    opacity: 0;
+}
+
+.product-item2:hover .product-images2 img.open2 {
+    opacity: 1;
+}
+/*phan other*/
+.container-other1{
+    margin-top:-10px;
+    background-color: #BFA760; 
+
+}
+.product-gallery {
+   
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 100px;
+    
+}
+
+.product-item3 {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 2px 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 270px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    text-align: left;
+}
+
+.product-item3:hover {
+    transform: scale(1.05);
+}
+
+.image-container {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.product-info h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.product-info p {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+}
+.container-other2{
+    margin-top: -80px;
+    margin-bottom:-40px ;
+    background-color: #432216; 
+}
+.special::after{
+    content:"";
+    display: block;
+    width: 40px; 
+    height: 2px;
+    background-color: white;
+    margin: 0.5% auto ; 
+}
+@media (min-width: 740px) and (max-width: 1023px)  {
+    .anhbia {
+        background: url('images/anhbia3.png') no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed; 
+        width: 100%;
+        height: 70vh; 
+    }
+    .menu {
+        display: none; 
+        flex-direction: column;
+        background-color: rgb(78, 74, 66, 0.9);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+    }
+    .menu li {
+        text-align: center;
+    }
+
+    .menu-icon {
+        font-size: 1.5em;
+        display: block; 
+    }
+    .others{
+        font-size: 1em;
+        margin-left: 60%;
+    }
+    .anhbia{
+        margin-top: 50px;
+        
+    }
+    .Casd{
+        font-size: 1.8vw;
+    }
+    .About-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .staffChange{
+        width: 40%;
+        margin-left: 5%;
+        align-items: center;
+    }
+    .au{
+        align-items: center;
+        font-size: 1.8vw;
+        margin-left: 10%;
+        margin-right: 10%;
+        
+    }
+    .quality{
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.8vw;
+        margin-left: 10%;
+        margin-right: 10%;
+    }.mat1,.mat2{
+        max-width: 20%;
+
+    }
+    .vidytb{
+        width: 100%;
+    }
+    
+    .au p1::after{
+        content:"______";
+        display: block;
+        width: 80px; 
+        height: 1px; 
+        background-color: white;
+        margin: -2% auto 0; 
+    }
+    .noidung p1::after{
+        content:"__________";
+        display: block;
+        width: 10vw; 
+        height: 1px; 
+        background-color: white; 
+        margin: -2% auto 0; 
+    }
+    .seemore h1{
+        font-size: 3.5vw;
+    }
+    .CONTACT .contact1::after{
+        content:"";
+        display: block;
+        width: 6vw;
+        height: 0.1vw; 
+        background-color: white; 
+        margin: 1% auto 0; 
+    }
+    .CONTACT p1{
+        font-size:2vw;
+    }
+    .CONTACT p2{
+        font-size:1.7vw;
+    }
+    .CONTACT .more{
+        margin-top: 2%;
+        font-size: 1.6vw;
+    }
+    .product-gallery{
+        flex-wrap: wrap;
+    }
+    .text-overlay {
+        margin-top: -3%;
+    }
+    .video-container {
+        height: 40vw;
+        margin-top: 5%;
+    }
+    .seemore iframe{
+        height: 30vw;
+    }
+}
+@media (max-width: 740px) {
+    
+    .menu {
+        display: none; 
+        flex-direction: column;
+        background-color: rgb(78, 74, 66, 0.9);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+    }
+    .menu li {
+        text-align: center;
+    }
+
+    .menu-icon {
+        display: block; 
+        font-size: 1.5em;
+    }
+    .others{
+        font-size: 1em; 
+        padding: 2%;
+        
+    }
+    .anhbia {
+        background: url('images/anhbia3.png') no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed; 
+        width: 100%;
+        height: 65vh; 
+    }
+    
+    .anhbia{
+        margin-top: 10%;
+        background: url('images/anhbia3.png') no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed; 
+        width: 100%;
+        height: 40vh; 
+    }
+    .About-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .staffChange{
+        width: 40%;
+        align-items: center;
+        margin-left: 5%;
+    }
+    .au{
+        align-items: center;
+        font-size: 1.8vw;
+        margin-left: 10%;
+        margin-right: 10%;
+        
+    }
+    .quality{
+        flex-direction: column;
+        align-items: center;
+    }.mat1,.mat2{
+        max-width: 20%;
+    }
+    .vidytb{
+        width: 100%;
+    }
+    
+    .product-gallery{
+        width: 100vw;
+    }
+    .seemore h1{
+        font-size: 4vw;
+    }
+    .au p1::after{
+        content:"______";
+        display: block;
+        width: 80px; 
+        height: 1px; 
+        background-color: white;
+        margin: -4% auto 0;
+    }
+    .CONTACT .contact1::after{
+        content:"";
+        display: block;
+        width: 6vw; 
+        height: 0.1vw;
+        background-color: white; 
+        margin: 1% auto 0; 
+    }
+    .CONTACT p1{
+        font-size:3vw;
+    }
+    .CONTACT p2{
+        font-size:2vw;
+    }
+    .CONTACT .more{
+        margin-top: 2%;
+        font-size: 1.7vw;
+    }
+    .Casd{
+        font-size: 1.8vw;
+    }
+    .noidung{
+        font-size: 1.8vw;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .product-gallery{
+        flex-wrap: wrap;
+        width: 50%;
+    }
+    .text-overlay {
+        margin-top: -4%;
+    }
+    .video-container {
+        height: 40vw;
+        margin-top: 12.5%;
+    }
+    .seemore iframe{
+        height: 30vw;
+    }
+    .visitus2{
+        margin-bottom: 15%;
+    }
+    .visitus2 p1{
+        font-size: 3vw;
+    }
+    .visitus2 p{
+        font-size: 1.5vw;
+    }
+    #map{
+        height: 40vw;
+    }
+    .special::after{
+        content:"";
+        display: block;
+        width: 40px; 
+        height: 2px; 
+        background-color: white;
+        margin: 0.5% auto ; 
+    }
+}
+   
+ 
+
